@@ -1,3 +1,5 @@
+// WAP to find area of triangle.
+
 #include<stdio.h>
 main()
 {

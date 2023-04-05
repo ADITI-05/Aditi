@@ -1,3 +1,5 @@
+//  WAP to find area of rectangle.
+
 #include<stdio.h>
 main()
 {

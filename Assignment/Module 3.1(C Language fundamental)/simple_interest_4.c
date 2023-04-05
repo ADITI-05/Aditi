@@ -1,3 +1,5 @@
+// WAP to find simple interest.
+
 #include<stdio.h>
 main()
 {

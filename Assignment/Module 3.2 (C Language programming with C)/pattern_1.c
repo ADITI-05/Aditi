@@ -1,3 +1,10 @@
+/* Pattern 1 : 1
+               10
+               101
+               1010
+               10101
+*/
+
 #include<stdio.h>
 main()
 {

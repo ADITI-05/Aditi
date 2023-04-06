@@ -1,3 +1,5 @@
+// WAP to print factorial of given number.
+
 #include<stdio.h>  
 main()    
 {    

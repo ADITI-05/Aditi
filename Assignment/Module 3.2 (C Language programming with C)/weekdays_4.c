@@ -1,16 +1,4 @@
-/* switch case:        int %d    float %f   char %s %c  double %lf
-     switch(expression){
-     case1 : 
-     printf();
-     break;
-     case 2 :
-     printf();
-	 break;
-	 default:
-	 printf();
-	 break;
-}
-*/  
+// WAP to show Monday to Sunday using switch case.
 
 #include<stdio.h>
 main()

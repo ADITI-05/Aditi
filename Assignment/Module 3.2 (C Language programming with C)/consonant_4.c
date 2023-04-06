@@ -1,3 +1,5 @@
+// WAP to show Vowel or Consonant using switch case.
+
 #include <stdio.h>
 main()
 {

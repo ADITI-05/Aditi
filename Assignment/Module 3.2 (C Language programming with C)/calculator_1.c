@@ -3,9 +3,9 @@
 #include <stdio.h>
 main() {
 
-  char op;
+  char op,m;
   int first, second;
-  printf("Enter an operator (+, -, *, /, %): ");
+  printf("Enter an operator (+, -, *, /, m): ");
   scanf("%c", &op);
   printf("Enter first value : ");
   scanf("%d", &first);
@@ -14,18 +14,21 @@ main() {
 
   switch (op) {
     case '+':
-      printf("%d + %d = %d", first, second, first + second);
+      printf("Total Addition = %d", first + second);
       break;
     case '-':
-      printf("%d - %d = %d", first, second, first - second);
+      printf("Total Substraction = %d", first - second);
       break;
     case '*':
-      printf("%d * %d = %d", first, second, first * second);
+      printf("Total Multiplication = %d", first * second);
       break;
     case '/':
-      printf("%d / %d = %d", first, second, first / second);
+      printf("Total Division = %d", first / second);
       break;
-
+    case 'm':
+      printf("Total Reminder = %d",first % second);
+      break;
+      
     default:
       printf("Error! operator is not correct");
       break;

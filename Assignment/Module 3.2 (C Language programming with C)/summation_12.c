@@ -12,5 +12,5 @@ main()
 		scanf("%d",&num);
 		totalsum+=num;  
 	}
-	  printf("\nTOTAL SUM OF YOUR ALL NUMBER IS = %d",totalsum);
+	  printf("\nTotal sum of your all number is = %d",totalsum);
 }

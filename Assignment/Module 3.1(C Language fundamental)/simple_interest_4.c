@@ -1,20 +1,22 @@
 // WAP to find simple interest.
 
 #include<stdio.h>
-main()
+int main()
 {
 	float PAmount , ROI , Time_period , SI;
 	
-	printf("\n Please Enter the principle amount : \n");
+	printf("\n Please Enter the principle amount : ");
 	scanf("%f", &PAmount);
 	
-	printf("\n Please Enter Rate of interest : \n");
+	printf("\n Please Enter Rate of interest : ");
 	scanf("%f", &ROI);
 	
-	printf("\n Please Enter the Time period : \n");
+	printf("\n Please Enter the Time period : ");
 	scanf("%f", &Time_period);
 	
 	SI = (PAmount * ROI * Time_period) / 100;
 	
-	printf("\n Simple Interest for Principle Amount %.2f is = %.2f", PAmount,SI);
+	printf("\n Simple Interest is = %.2f",SI);
+	
+	return 0;
 }

@@ -1,21 +1,26 @@
-/* Pattern 3 : 
-*/
+/* Pattern 3 :             *
+                         * * *
+                       * * * * *
+					 * * * * * * *
+				   * * * * * * * * *  
+*/                       
 
 #include<stdio.h>
-main()
+int main()
 {
 	int i, space, rows, k=0;
-	for(i=1;i<=5;i++,k=0)
+	for(i=1;i<=9;i++,k=0)
 	{
-		for(space=1;space<=rows-i;space++)
+		for(space=1;space<=9-i;++space)
 		{
 			printf(" ");
 		}
 		while(k != 2 * i-1 )
 		{
-			printf("*");
-			k++;
+			printf("* ");
+			++k;
 		}
 		printf("\n");
 	}
+	return 0;
 }

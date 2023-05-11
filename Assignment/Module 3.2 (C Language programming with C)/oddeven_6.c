@@ -6,27 +6,30 @@
  */
 
 #include<stdio.h>
-main ()
+int main ()
 {
-int i,value,even=0,odd=0,totalofe=0,totalofo=0;
+int i,num,o=0,e=0,sumofeven,sumofodd;
 for(i=1;i<=10;i++)
 {
-printf ("Enter the value : " );
-scanf("%d",&value);
-if(value%2 == 0)
+printf ("\nEnter the value : " );
+scanf("%d",&num);
+if(num%2 == 0)
 {
-	even+=1;
-	totalofe+=value;
+	printf("Your number is even.");
+	e++;              //if number is even than e++ count
+	sumofeven+=num;   //if number is even than number is stored
 }
 else
 {
-	odd+=1;
-	totalofo+=value;
+	printf("Your number is odd.");
+	o++;             //if number is odd than o++ count
+	sumofodd+=num;   //if number id odd than number is stored 
 }
 }
-printf("Total of even numbers %d \n",even);
-printf("Total of odd numbers %d  \n", odd);
-printf("This is sum of even numbers %d \n",totalofe);
-printf("This is sum of odd numbers %d \n", totalofo);
+printf("Total of even numbers %d \n",e);
+printf("Total of odd numbers %d  \n", o);
+printf("This is sum of even numbers %d \n",sumofeven);
+printf("This is sum of odd numbers %d \n",sumofodd);
+return 0;
 }
 

@@ -1,15 +1,20 @@
 // WAP to swap two numbers without using third variable.
 
 #include<stdio.h>  
-main()   
+int main()   
 {   
   int  a,b;  
-  printf("Enter the value of a and b?");  
-  scanf("%d %d",&a,&b);  
-  printf("before swapping numbers: %d   %d\n",a,b);  
-
+  printf("Enter the value of a :");  
+  scanf("%d",&a);
+  printf("Enter the value of b :");  
+  scanf("%d",&b);
+    
   a = a + b;   
   b = a - b;    
-  a = a - b;  
-  printf("After swapping: %d    %d",a,b);      
+  a = a - b; 
+  
+  printf("\nAfter swap value is a: %d",a);
+  printf("\nAfter swap value is b: %d",b);
+  
+  return 0;  
 }  

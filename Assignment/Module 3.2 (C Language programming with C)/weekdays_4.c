@@ -1,10 +1,10 @@
 // WAP to show Monday to Sunday using switch case.
 
 #include<stdio.h>
-main()
+int main()
 {
 	int num;
-	printf("Enter your value :");
+	printf("Enter your day(1 to 7) :");
 	scanf("%d", &num);
 	switch(num)
 	{
@@ -40,4 +40,5 @@ main()
 		 printf("Invalid Input.");
 		 break;
 	}
+	return 0;
 }

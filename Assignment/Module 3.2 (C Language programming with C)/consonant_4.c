@@ -1,7 +1,7 @@
 // WAP to show Vowel or Consonant using switch case.
 
 #include <stdio.h>
-main()
+int main()
 {
     char ch;
     printf("Enter any alphabet: ");
@@ -40,5 +40,6 @@ main()
             break;
         default: 
             printf("Consonant.");
-}
+    }
+   return 0;
 }

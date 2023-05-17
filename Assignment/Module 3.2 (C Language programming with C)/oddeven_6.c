@@ -23,7 +23,7 @@ else
 {
 	printf("Your number is odd.");
 	o++;             //if number is odd than o++ count
-	sumofodd+=num;   //if number id odd than number is stored 
+	sumofodd+=num;   //if number is odd than number is stored 
 }
 }
 printf("Total of even numbers %d \n",e);

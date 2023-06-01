@@ -1,4 +1,4 @@
-//print choice board & perform specific task by choice of user  using function.
+//print choice board & perform specific task by choice of user using function. (type 4)
 
 #include<stdio.h>
 

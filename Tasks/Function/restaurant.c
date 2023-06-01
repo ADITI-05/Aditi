@@ -1,4 +1,4 @@
-// Tops Restaurant
+// Tops Restaurant. (type 4)
 
 #include<stdio.h>
 int piz(int q) // func 1 : declaration and defination

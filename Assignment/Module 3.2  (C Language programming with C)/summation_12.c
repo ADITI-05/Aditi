@@ -4,7 +4,7 @@
 main()
 {
 	int i,value,num,totalsum=0;
-	printf("how many number for total : ");
+	printf("How many number for total : ");
 	scanf("%d",&value);
 	
 	for(i=1;i<=value;i++){

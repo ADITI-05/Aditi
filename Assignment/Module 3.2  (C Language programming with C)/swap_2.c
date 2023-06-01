@@ -13,8 +13,8 @@ int main()
   b = a - b;    
   a = a - b; 
   
-  printf("\nAfter swap value is a: %d",a);
-  printf("\nAfter swap value is b: %d",b);
+  printf("\nAfter swapping value of b is: %d",a);
+  printf("\nAfter swapping vlaue of b is: %d",b);
   
   return 0;  
 }  

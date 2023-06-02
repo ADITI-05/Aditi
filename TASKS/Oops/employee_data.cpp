@@ -1,4 +1,4 @@
-// Employee data.
+// Take 3 employee detail and print their name, id and salary.Using array and encapsulation method.
 
 #include<iostream>
 using namespace std;

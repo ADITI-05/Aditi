@@ -1,4 +1,23 @@
 //Login page for travel agency with Encapsulation and Inheritance (multi level method).
+/*  Top 10 destinations must visit list that
+    Do you want to register yourself for more details[y/n]:
+    if no
+    Thank you for visit..
+    
+    if yes
+    welcome to registration page
+    Enter username:
+    Enter password:
+    Enter confirm password:
+    
+    if pwd and cpwd matched..... then go for login
+	if pwd and cpwd not matched! then repeat registration process again.
+	
+	login page  : Enter username 
+	              Enter password
+	If username and pwd matched with registrartion details then....login sucess else access denied. 
+*/
+
 
 #include<iostream>
 #include<cstring>

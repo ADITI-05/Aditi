@@ -10,9 +10,7 @@ int main()
 	
 	for(i=0;str[i] !='\0';i++)
 	{
-		i=ch;
-		
+		i=ch;	
 	}
-	
 	return 0;
 }

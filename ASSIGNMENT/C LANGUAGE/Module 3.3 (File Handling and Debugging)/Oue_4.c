@@ -1,7 +1,6 @@
 // WAP to find factorial using recursion.
 
 #include<stdio.h>
-
 double fact(int n)
 {
 	if(n<=0)

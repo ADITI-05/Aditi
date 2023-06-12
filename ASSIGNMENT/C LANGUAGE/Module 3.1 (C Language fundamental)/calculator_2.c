@@ -23,7 +23,7 @@ int main()
   
   printf("\n\n(3) Multiplication");
   
-  float num5,num6; // Multiplicatio of two no.
+  float num5,num6; // Multiplication of two no.
   printf("\nEnter number 1 :");
   scanf("%f",&num5);
   printf("Enter number 2 :");

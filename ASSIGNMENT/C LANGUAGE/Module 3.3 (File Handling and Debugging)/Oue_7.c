@@ -1,7 +1,6 @@
 // WAP Find out length of string without using inbuilt function.
 
 #include<stdio.h>
-
 int main()
 {
 	char str[20];

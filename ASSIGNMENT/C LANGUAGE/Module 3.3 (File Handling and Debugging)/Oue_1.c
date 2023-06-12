@@ -1,7 +1,6 @@
 // Write a program to find out the max number from given array using function.
 
 #include<stdio.h>
-
 int large(int n,int a[])
 {
 	int i,max=(-1000);

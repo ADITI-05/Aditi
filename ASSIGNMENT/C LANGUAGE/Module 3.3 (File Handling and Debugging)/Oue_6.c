@@ -1,7 +1,6 @@
 // WAP to make addition, Subtraction and multiplication of two matrix using 2-D Array.
 
 #include<stdio.h>
-
 int main()
 {
 	int a[20][20],b[20][20];

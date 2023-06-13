@@ -11,15 +11,13 @@ int main()
 	
 	ln = strlen(str)-1;
 	
-	//reverse string without using function
-	printf("\nReverse String is : ");
+	printf("\nReverse String is : "); // reverse string without using function
 	for(i=ln;i>=0;i--)
 	{
 		printf("%c",str[i]);
 	}
 	
-	//string is palindrome or not
-	int a=0;
+	int a=0; // string is palindrome or not
 	
 	for(i=0;i<ln;i++)
 	{

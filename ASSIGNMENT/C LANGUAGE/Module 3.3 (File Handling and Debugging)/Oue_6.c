@@ -132,14 +132,14 @@ int main()
 		int re[20][20];
 		
 		printf("\n=======Choose Multiplication=====\n");
-		printf("\nEnter Number of Row of first array : ");
+		printf("\nEnter Number of Row : ");
 		scanf("%d",&r);
-		printf("Enter Number of Column of first array : ");
+		printf("Enter Number of Column : ");
 		scanf("%d",&c);
 		
-		printf("\nEnter Number of Row of second array : ");
+		printf("\nEnter Number of Row : ");
 		scanf("%d",&r2);
-		printf("Enter Number of Column of second array : ");
+		printf("Enter Number of Column : ");
 		scanf("%d",&c2);
 		printf("\n\n");
 		

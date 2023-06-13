@@ -1,7 +1,7 @@
 // Write a program to find out the max number from given array using function.
 
 #include<stdio.h>
-int large(int n,int a[])
+int large(int n,int a[]) // function declaration
 {
 	int i,max=(-1000);
 	for(i=0;i<n;i++)
@@ -19,10 +19,10 @@ int main()
 {
 	int n,i,a[100];
 	
-	printf("Enter number of term to take array elements : ");
+	printf("Enter number of terms to take array elements : ");
 	scanf("%d",&n);
 	
-	printf("\nYour Maximum Element : %d",large(n,a));
+	printf("\nMaximum Element : %d",large(n,a));
 	
 	return 0;
 }

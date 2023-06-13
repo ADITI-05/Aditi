@@ -1,13 +1,12 @@
 // WAP to find reverse of string using recursion.
 
 #include<stdio.h>
-#include<string.h>
+#include<string.h> // header file for string
 
 //function declaration & defination
 void rev(char str[],int i,int ln)
 {
 	char temp;
-	
 	temp=str[i];
 	str[i]=str[ln-i];
 	str[ln-i]=temp;
@@ -16,7 +15,6 @@ void rev(char str[],int i,int ln)
 	{
 		return;
 	}
-	
 	rev(str,i+1,ln);
 }
 
@@ -32,7 +30,7 @@ int main()
 	
 	rev(str,0,ln); //function calling
 	
-	printf("Reverse string : %s",str);
+	printf("Reverse string is : %s",str);
 	
 	return 0;
 }

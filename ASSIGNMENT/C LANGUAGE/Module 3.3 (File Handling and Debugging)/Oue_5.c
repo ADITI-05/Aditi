@@ -4,10 +4,9 @@
 int main()
 {
 	int num;
-	
-	printf("=======MENU=======\n");
-	printf("(1) Ascending\n");
-	printf("(2) Descending\n");
+	printf("=======How to sort=======\n");
+	printf("(1) Ascending Order\n");
+	printf("(2) Descending Order\n");
 	
 	printf("\nEnter your choice : ");
 	scanf("%d",&num);
@@ -17,7 +16,7 @@ int main()
 		int n,a[5];
 		int i,j,temp;
 		
-		printf("\nEnter no. of terms for Ascending order : ");
+		printf("\nEnter no. of terms for Ascending order :- ");
 		scanf("%d",&n);
 		
 		for(i=0;i<n;i++)
@@ -26,15 +25,13 @@ int main()
 				scanf("%d",&a[i]);
 			}
 	
-			//to sort the array
-			for(i=0;i<n;i++)
+			for(i=0;i<n;i++) // to sort the array
 				{
 					for(j=i+1;j<n;j++)
 						{
-							if(a[i]>a[j])//ascending order
+							if(a[i]>a[j]) // ascending order
 								{
-									//swap elements
-									temp=a[i];
+									temp=a[i]; // swap elements
 									a[i]=a[j];
 									a[j]=temp;
 								}
@@ -52,7 +49,7 @@ int main()
 		int n,a[5];
 		int i,j,temp;
 		
-		printf("\nEnter no. of terms to print Descending order : ");
+		printf("\nEnter no. of terms for Descending order :- ");
 		scanf("%d",&n);
 		
 		for(i=0;i<n;i++)
@@ -61,15 +58,13 @@ int main()
 				scanf("%d",&a[i]);
 			}
 	
-			//to sort the array
-			for(i=0;i<n;i++)
+			for(i=0;i<n;i++) // to sort the array
 				{
 					for(j=i+1;j<n;j++)
 						{
 							if(a[i]<a[j])//Descending order
 								{
-									//swap elements
-									temp=a[i];
+									temp=a[i]; // swap elements
 									a[i]=a[j];
 									a[j]=temp;
 								}
@@ -85,6 +80,5 @@ int main()
 	{
 		printf("Invalid input!!");
 	}
-
 	return 0;
 } 

@@ -1,6 +1,5 @@
-/* Assessment : 2 (C++ and oops concept)
+//  Assessment : 2 (C++ and oops concept)
 
-*/
 
 #include<iostream>
 #include<ctime>
@@ -44,32 +43,32 @@ class ATM{
 		{
 			if(epin==pin)
 			{
-			 cout<<"\nAccess grandted "<<endl;
+			 cout<<"\nAccess granted"<<endl;
 			 menu();
 			}
 			else
 			{
-				cout<<"\nYOu had made your attempt which failed !! No more  attempt allowed!! Sorry!!"<<endl;
+				cout<<"\nYou had made your attempt which has failed !! No more  attempts allowed. Sorry!!"<<endl;
 			}
 		}
 		
 		void help()
 		{
 			cout<<"\n=====================ATM ACCOUNT STATUS====================="<<endl;
-			cout<<"\nYou must have the correct pin number to access this account.\n see your bank representive for assistance during bank opning hours Thanks for, your choice today!!"<<endl;
+			cout<<"\nYou must have the correct pin number to access this account.\n See your bank representative for assistance during bank opening hours. Thanks you for your choice today!!"<<endl;
 		}
 		
 		void menu()
 		{
 		  
 			cout<<"\n\t==========ATM Main Menu Screen=========="<<endl;
-			cout<<"\t\tEnter [1] to Deposit Cash"<<endl;
-			cout<<"\t\tEnter [2] to Withdraw Cash"<<endl;
-			cout<<"\t\tEnter [3] to Balance inquiry"<<endl;
-			cout<<"\t\tEnter [0] to Exit ATM"<<endl;
+			cout<<"\t\tEnter [1] To Deposit Cash"<<endl;
+			cout<<"\t\tEnter [2] To Withdraw Cash"<<endl;
+			cout<<"\t\tEnter [3] To Balance inquiry"<<endl;
+			cout<<"\t\tEnter [0] To Exit ATM"<<endl;
 			
 			int ch;
-			cout<<"\nPLEASE ENTER A SELECTION AND PRESS RETURN KEY :"<<endl;
+			cout<<"\nPLEASE ENTER A SELECTION AND PRESS RETURN KEY : "<<endl;
 			cin>>ch;
 			
 			switch(ch) {
@@ -98,13 +97,13 @@ class ATM{
 			
 			int amt;
 			display();
-			cout<<"Present available balance is :"<<balance<<endl;
-			cout<<"\nEnter Deposite amount :";
+			cout<<"Present available balance is : "<<balance<<endl;
+			cout<<"\nEnter Deposit amount : ";
 			cin>>amt;
 			
 			balance+=amt;
-			cout<<"Deposite Successfull"<<endl;
-			cout<<"\nYour new available balance amount is :"<<balance<<endl;
+			cout<<"Deposit Successfull"<<endl;
+			cout<<"\nYour new available balance amount is : "<<balance<<endl;
 			cout<<"\n\t\t\tThank You!"<<endl;
 			cout << "\nPress any key to Return to the Main Menu" << endl;
 		     menu();
@@ -114,7 +113,7 @@ class ATM{
 	    {
 	    	int amt;
 	    	display();
-	    	cout<<"\nEnter Withdraw amount :";
+	    	cout<<"\nEnter Withdrawal amount : ";
 	    	cin>>amt;
 	    	
 	    	if(amt>balance)
@@ -124,8 +123,8 @@ class ATM{
 			else
 			{
 			    balance-=amt;
-				cout<<"Withdraw Successfull"<<endl;
-				cout<<"\nYour new available balance amount is :"<<balance<<endl;
+				cout<<"Withdrawal Successfull"<<endl;
+				cout<<"\nYour new available balance amount is : "<<balance<<endl;
 			}
 			
 	    	menu();
@@ -134,25 +133,25 @@ class ATM{
 		void inquiry()
 		{
 			display();
-		    cout<<"\nCurrent balance is :"<<balance<<endl;	
+		    cout<<"\nCurrent balance is : "<<balance<<endl;	
 		    menu();
 		}
 		void display()
 		{
 			cout<<"\n\t\t==========ATM ACCOUNT HOLDER INFORMATION=========="<<endl;
-			cout<<"The Name of thr Account Holder are :"<<name<<endl;
-			cout<<"The Account Holder address is      :"<<address<<endl;
-			cout<<"The Branch loacation is            :"<<location<<endl;
-			cout<<"The Account Number is              :"<<accnum<<endl;
+			cout<<"The Name of thr Account Holder is  : "<<name<<endl;
+			cout<<"The Account Holder address is      : "<<address<<endl;
+			cout<<"The Branch location is            : "<<location<<endl;
+			cout<<"The Account number is              : "<<accnum<<endl;
 		}
 		
 		void unsucessfulwithdrawal()
 		{
 			cout<<"\n\t\t==========ATM ACCOUNT WITHDRAWAL=========="<<endl;
-			cout<<"\nThe Name of thr Account Holder are :"<<name<<endl;
-			cout<<"The Account Holder address is      :"<<address<<endl;
-			cout<<"The Branch loacation is            :"<<location<<endl;
-			cout<<"The Account Number is              :"<<accnum<<endl;
+			cout<<"\nThe Name of thr Account Holder is : "<<name<<endl;
+			cout<<"The Account Holder address is       : "<<address<<endl;
+			cout<<"The Branch location is              : "<<location<<endl;
+			cout<<"The Account Number is               : "<<accnum<<endl;
 		   cout<<"\nInsufficent Available Balance in your account."<<endl;	
 		   cout<<"\n\t\t\tSorry!!"<<endl;
 		}
@@ -171,7 +170,7 @@ int main()
 	if(c==1)
 	{
 		cout<<"\n===================================================================================================================="<<endl;
-		cout<<"\nEnter your account pin for access Number! [Only one attempt is allowed] "<<endl;
+		cout<<"\nEnter your account pin for access Number! [ONLY ONE ATTEMPT IS ALLOWED.] "<<endl;
 		cin>>pin;
 		a1.accountpin(pin);
 		

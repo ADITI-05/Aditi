@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+<script>
+// class Hospitality
+class Hospitality {
+    // Define constructor with parameters
+    constructor(name, address, contact) {
+        this.name = name;
+        this.address = address;
+        this.contact = contact;
+    }
+
+    // method to display information about hotel
+    displayInfo() {
+        console.log("Hotel Name: " + this.name);
+        console.log("Hotel Address: " + this.address);
+        console.log("Hotel Contact: " + this.contact);
+    }
+}
+
+// objects of class Hospitality
+let hotel1 = new Hospitality("The Grand Hotel", "123 Main St, City, State", "123-456-7890");
+let hotel2 = new Hospitality("The Luxury Suites", "456 Oak St, City, State", "456-789-0123");
+let hotel3 = new Hospitality("The Ritz Carlton", "789 Pine St, City, State", "789-012-3456");
+
+// Display information about each hotel
+hotel1.displayInfo();
+hotel2.displayInfo();
+hotel3.displayInfo();
+
+============================================================
+
+// class StudentPortal
+class StudentPortal {
+    // constructor with parameters
+    constructor(name, age, gender) {
+        this.name = name;
+        this.age = age;
+        this.gender = gender;
+    }
+
+    // method to display information about student
+    displayInfo() {
+        console.log("Student Name: " + this.name);
+        console.log("Student Age: " + this.age);
+        console.log("Student Gender: " + this.gender);
+    }
+}
+
+// objects of class StudentPortal
+let student1 = new StudentPortal("Alice", 21, "Female");
+let student2 = new StudentPortal("Bob", 23, "Male");
+let student3 = new StudentPortal("Charlie", 20, "Male");
+
+// Display information about each student
+student1.displayInfo();
+student2.displayInfo();
+student3.displayInfo();
+
+===============================================================
+
+// class bank
+class Bank {
+    // constructor with parameters
+ constructor(accountNo, accountName, accountBalance) {
+    this.accountNo = accountNo;
+    this.accountName = accountName;
+    this.accountBalance = accountBalance;
+ }
+
+ deposit(amount) {
+    this.accountBalance += amount;
+    console.log(`Deposited amount: ${amount}. New balance: ${this.accountBalance}`);
+ }
+
+ withdraw(amount) {
+    if (this.accountBalance >= amount) {
+      this.accountBalance -= amount;
+      console.log(`Withdrawn amount: ${amount}. New balance: ${this.accountBalance}`);
+    } else {
+      console.log("Insufficient balance.");
+    }
+ }
+
+ checkBalance() {
+    console.log(`Account Balance: ${this.accountBalance}`);
+ }
+}
+
+const bank1 = new Bank(123456, "John Doe", 5000);
+const bank2 = new Bank(234567, "Jane Doe", 10000);
+const bank3 = new Bank(345678, "Bob Smith", 7500);
+
+bank1.deposit(500);
+bank2.withdraw(2000);
+bank3.checkBalance();
+
+===============================================================
+
+class Animal {
+ constructor(species, habitat) {
+    this.species = species;
+    this.habitat = habitat;
+ }
+
+ introduce() {
+    console.log(`Hi, I am a ${this.species} and I live in a ${this.habitat}.`);
+ }
+}
+
+class Creature extends Animal {
+ constructor(species, habitat, speed, strength) {
+    super(species, habitat);
+    this.speed = speed;
+    this.strength = strength;
+ }
+
+ attack() {
+    console.log(`I can attack with a speed of ${this.speed} and a strength of ${this.strength}.`);
+ }
+}
+
+class Pet extends Animal {
+ constructor(owner, species, name, age) {
+    super(species, "");
+    this.owner = owner;
+    this.name = name;
+    this.age = age;
+ }
+
+ play() {
+    console.log(`${this.name} is playing with its owner, ${this.owner}.`);
+ }
+}
+
+const creature1 = new Creature("Lion", "Savannah", 100, 150);
+const creature2 = new Creature("Tiger", "Jungle", 90, 140);
+const pet1 = new Pet("Alice", "Dog", "Bingo", 3);
+const pet2 = new Pet("Bob", "Cat", "Whiskers", 2);
+
+creature1.introduce();
+creature1.attack();
+
+pet1.introduce();
+pet1.play();
+
+pet2.introduce();
+pet2.play();
+
+=========================================================================
+
+class Institute {
+ constructor(name, courses) {
+    this.name = name;
+    this.courses = courses;
+ }
+
+ enrollStudent(student, courseName) {
+    this.courses.forEach(course => {
+        if (course.name === courseName) {
+            course.enrollStudent(student);
+        }
+    });
+ }
+}
+
+
+class Course {
+ constructor(name, instructor) {
+    this.name = name;
+    this.instructor = instructor;
+    this.students = [];
+ }
+
+ enrollStudent(student) {
+    this.students.push(student);
+ }
+}
+
+const mathCourse = new Course("Mathematics", "Dr. Smith");
+const englishCourse = new Course("English", "Mrs. Johnson");
+const computerScienceCourse = new Course("Computer Science", "Mr. Brown");
+
+const courses = [mathCourse, englishCourse, computerScienceCourse];
+const institute = new Institute("ABC Institute", courses);
+
+institute.enrollStudent("Alice", "Mathematics");
+institute.enrollStudent("Bob", "Computer Science");
+
+console.log(mathCourse.students); // Output: ["Alice"]
+console.log(computerScienceCourse.students); // Output: ["Bob"]
+
+</script>
+
